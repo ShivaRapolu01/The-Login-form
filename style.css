@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}
+body{
+    font-family: Arial;
+}
+#video-container{
+    position:relative; 
+     
+}
+#full-screen{
+    position:relative;
+    height:100vh; 
+    width:100vw;
+   overflow:hidden;
+    display:flex; 
+    justify-content:center;
+    align-items:center; 
+}
+
+#full-screen video{
+    z-index:-1; 
+    position:absolute; 
+    min-width:100%; 
+    min-height:100%;
+    width:auto; 
+    height:auto;
+    top:50%; 
+    left:50%; 
+    transform: translate(-50%,-50%); 
+}
+.login-container{
+    position:absolute; 
+    background-color: hsla(201, 100%, 6%, 0.6);
+    padding:50px 50px; 
+    min-width:300px; 
+    width:50%;
+    max-width:400px; 
+}
+.login-title{
+    /* padding:20px;  */
+    color:white;
+    font-weight:bolder;
+    text-align:center;
+    margin:0; 
+    margin-bottom:30px;
+    font-size:30px; 
+}
+.login-container .input-box{
+    position:relative; 
+    display:flex; 
+    flex-direction:column; 
+    margin-bottom:30px; 
+    outline:none; 
+    cursor:text; 
+}
+.login-container .input-box input{
+    width:100%;
+    padding:10px 0; 
+    font-size:16px;
+    color:#fff; 
+    border:none; 
+    margin:0; 
+    border-bottom:1px solid #fff;
+    outline:none; 
+    background-color:transparent; 
+    border-radius:5px; 
+    letter-spacing: 1px;
+
+}
+
+.login-container .input-box label{
+    position:absolute;
+    top:0; 
+    left:0; 
+    color:#fff; 
+    padding:10px 0;
+    transition:0.5s; 
+    pointer-events: none;
+    cursor:text;  
+    letter-spacing: 1px;
+
+}
+.login-container .input-box input:focus~label ,.login-container .input-box input:valid~label{
+    top:-20px; 
+    left:0; 
+    color:#fff;
+    font-size:12px;  
+    
+}
+.login-submit {
+    padding:8px 9px;
+    width:50%;
+    border-radius:5px; 
+     font-size:1.4rem;
+     outline:none;
+     margin-top:10px; 
+     margin-left:25%;
+     color:white;
+     font-weight: lighter;
+     background-color: hsla(200, 59%, 15%, 0.25);
+    border: 1px solid #fff;
+    cursor:pointer; 
+    letter-spacing: 1px;
+}
+.login-submit:focus{
+    background-color: #fff; 
+    color:rgb(13, 132, 212); 
+}
+.login-submit:hover{
+    background-color: #f0432c; 
+    color:white;  
+    box-shadow:0 0 5px #f09387,0 0 25px #f09387,0 0 50px #f09387,0 0 100px #f09387;
+}
