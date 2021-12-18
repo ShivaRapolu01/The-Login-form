@@ -4,7 +4,7 @@
     padding:0;
 }
 body{
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #video-container{
     position:relative; 
@@ -63,10 +63,9 @@ body{
     color:#fff; 
     border:none; 
     margin:0; 
-    border-bottom:1px solid #fff;
+    border-bottom:1.4px solid #fff;
     outline:none; 
-    background-color:transparent; 
-    border-radius:5px; 
+    background-color:transparent;  
     letter-spacing: 1px;
 
 }
@@ -83,13 +82,15 @@ body{
     letter-spacing: 1px;
 
 }
+
 .login-container .input-box input:focus~label ,.login-container .input-box input:valid~label{
-    top:-20px; 
+    top:-30px; 
     left:0; 
-    color:#fff;
-    font-size:12px;  
-    
+    color:#54eff5;
+    font-size:12px; 
+    z-index:1;     
 }
+
 .login-submit {
     padding:8px 9px;
     width:50%;

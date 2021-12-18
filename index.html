@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>The Login Form</title>
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <div id="full-screen">
@@ -13,14 +14,14 @@
             <source src="Video.mp4" type="video/mp4" />
           </video>
       <div class="login-container">
-        <h3 class="login-title">Welcome!</h3>
-        <form method="" action=" ">
+        <h3 class="login-title" id="title-tweak"> Welcome!</h3>
+        <form id="form" method="" action=" ">
             <div class="input-box">
-          <input type="email" required>
-          <label>E-mail</label>
+          <input id="mail" type="email" required>
+          <label><span>Email</span></label>
             </div>
             <div class="input-box">
-                <input type="password" required>
+                <input id="password" type="password" required>
                 <label>Password</label>
                   </div>
             <button type="submit" class="login-submit">Submit</button>
